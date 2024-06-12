@@ -1,0 +1,36 @@
+n = 4
+
+0 0 0 0 1 1 1 1		( ( ( ( ) ) ) )	base example
+
+recursive diagram system - dimention reduction
+
+1°	 0 - - - - - - 1	| no swap to avoid break rules
+2°	   0 - - - - 1		| 2 swaps (won't affect since the inners also follow the rule)
+3°	     0 - - 1		| 2 swaps
+4°	       0 1		| 2 swaps
+
+
+
+Combinations
+
+0 0 0 0 1 1 1 1		( ( ( ( ) ) ) )
+
+0 0 0 1 0 1 1 1		( ( ( ) ( ) ) )
+new branch
+1°	 1 - - 1
+	   0 1		swap
+0 0 0 1 1 0 1 1
+
+new branch
+1° 	1 - - 1
+	  0 1
+0 0 0 1 1 1 0 1
+
+0 0 1 0 1 0 1 1		( ( ) ( ) ( ) )
+0 0 1 1 0 0 1 1		( ( ) ) ( ( ) )
+
+0 1 0 0 1 1 0 1		( ) ( ( ) ) ( )
+0 1 0 1 0 1 0 1 	( ) ( ) ( ) ( )
+
+missing cases on this algorithm
+0 1 0 0 1 0 1 1		( ) ( ( ) ( ) )
